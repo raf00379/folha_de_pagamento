@@ -1,0 +1,9 @@
+cod_usu	nome_usu	senha_usu	adm_usu
+1	teste		1111		Sim
+2	wel		2222		Sim
+3	naldinho	24		Não
+4	fernanda	asd		Não
+5	Usu1	        123     	Sim
+6	usuario	        333     	Sim
+
+banco de dados acess: aaa

@@ -1,0 +1,55 @@
+unit u_relad_depemp;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, QuickRpt, QRCtrls, DB, ADODB;
+
+type
+  Tfrm_relat_depemp = class(TForm)
+    QuickRep1: TQuickRep;
+    QRBand1: TQRBand;
+    QRBand2: TQRBand;
+    QRBand4: TQRBand;
+    QRLabel1: TQRLabel;
+    tbl_empre: TADOTable;
+    tbl_depart: TADOTable;
+    dat_emp: TDataSource;
+    tbl_emprecod_emp: TAutoIncField;
+    tbl_emprenome_emp: TWideStringField;
+    tbl_empreendereco_emp: TWideStringField;
+    tbl_emprecidade_emp: TWideStringField;
+    tbl_empreestado_emp: TWideStringField;
+    tbl_emprefone_emp: TWideStringField;
+    tbl_emprefax_emp: TWideStringField;
+    tbl_emprecep_emp: TWideStringField;
+    tbl_empremail_emp: TWideStringField;
+    tbl_empresite_emp: TWideStringField;
+    tbl_emprecgc_emp: TWideStringField;
+    tbl_emprelogo_emp: TBlobField;
+    tbl_emprecnpj_emp: TWideStringField;
+    tbl_departcod_depto: TAutoIncField;
+    tbl_departnome_depto: TWideStringField;
+    tbl_departcod_emp: TIntegerField;
+    tbl_departcod_func: TIntegerField;
+    QRDBText1: TQRDBText;
+    QRSubDetail1: TQRSubDetail;
+    QRDBText2: TQRDBText;
+    QRLabel2: TQRLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_relat_depemp: Tfrm_relat_depemp;
+
+implementation
+
+uses u_empresa, d_folhla;
+
+{$R *.dfm}
+
+end.
